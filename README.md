@@ -1,2 +1,6 @@
 # Titanic-survival-challenge
-Using a dataset with different information about every passenger from the titanic. I made an AI model which tried to predict whether a certain passenger survived the sinking of the titanic or not. 
+Using a dataset with different information about every passenger from the Titanic. I made an AI model which tried to predict whether a certain passenger survived the sinking of the Titanic or not. 
+
+We begin by cleaning the dataset. It is important that all the data in the dataset is represented in an integer so our computer can read it and make accurate mathematical predictions. It is also necessary to scan the data and make sure all data being fed o the computer is relevant to making a prediction. If something is not relevant we can drop the column using the .drop() function which was used with various columns. Most of the data that was dropped was mainly because it included integers along with letters such as the cabin and the ticket number.
+
+After we have cleaned and simplified the data. We begin to implement our models. In this code, I imported 3 models from scikit learn--LogisticRegression, KNN, and Decision Tree. After a lot of experimentation with the models, I came to the conclusion that Logistic Regression would get me the best accuracy in predicting the survival of different people on the Titanic. However, for a basic model, the decision tree classifier did fairly well in its predictions, scoring an almost identical score to the Logistic Regression, consistently scoring above 80% accuracy.
